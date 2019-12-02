@@ -3,8 +3,8 @@
 ### Setup
 **Clone repo**
 ```bash
-$ git clone 
-$ cd 
+$ git clone https://github.com/nikhil-dabhade/amplify-ios-samples.git
+$ cd amplify-ios-samples/
 ```
 
 **Install dependencies**
