@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		214421C923493C61009357F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214421C523493C61009357F7 /* Constants.swift */; };
+		214421CA23493C61009357F7 /* ErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214421C623493C61009357F7 /* ErrorMapper.swift */; };
+		214421CB23493C61009357F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214421C723493C61009357F7 /* User.swift */; };
+		214421CC23493C61009357F7 /* ConfirmCodeSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214421C823493C61009357F7 /* ConfirmCodeSource.swift */; };
+		214421CF23493C74009357F7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214421CE23493C74009357F7 /* Extensions.swift */; };
+		214421D123493F91009357F7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214421D023493F91009357F7 /* MainTabBarController.swift */; };
+		214421D623495FF2009357F7 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214421D523495FF2009357F7 /* ItemViewController.swift */; };
+		21442259234A5372009357F7 /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442255234A5372009357F7 /* PhotoSelectorCell.swift */; };
+		2144225A234A5372009357F7 /* SharePhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442256234A5372009357F7 /* SharePhotoController.swift */; };
+		2144225B234A5372009357F7 /* PhotoSelectorHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442257234A5372009357F7 /* PhotoSelectorHeader.swift */; };
+		2144225C234A5372009357F7 /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442258234A5372009357F7 /* PhotoSelectorController.swift */; };
+		2144225F234A61EA009357F7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144225E234A61EA009357F7 /* Item.swift */; };
+		21442261234A6254009357F7 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442260234A6254009357F7 /* ItemCell.swift */; };
+		21442263234A62C9009357F7 /* AmplifyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442262234A62C9009357F7 /* AmplifyImageView.swift */; };
+		21442266234A8A0F009357F7 /* ListUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442265234A8A0F009357F7 /* ListUsersViewController.swift */; };
+		21442268234A8A85009357F7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442267234A8A85009357F7 /* Profile.swift */; };
+		2144226A234A8A8F009357F7 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21442269234A8A8F009357F7 /* ProfileCell.swift */; };
+		21AC1B652338213E0009898A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC1B642338213E0009898A /* AppDelegate.swift */; };
+		21AC1B672338213E0009898A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC1B662338213E0009898A /* ProfileViewController.swift */; };
+		21AC1B6A2338213E0009898A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AC1B682338213E0009898A /* Main.storyboard */; };
+		21AC1B6C2338213F0009898A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21AC1B6B2338213F0009898A /* Assets.xcassets */; };
+		21AC1B6F2338213F0009898A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21AC1B6D2338213F0009898A /* LaunchScreen.storyboard */; };
+		21AC1B7A2338213F0009898A /* AmplifyStorageSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC1B792338213F0009898A /* AmplifyStorageSampleAppTests.swift */; };
+		21AC1B852338213F0009898A /* AmplifyStorageSampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC1B842338213F0009898A /* AmplifyStorageSampleAppUITests.swift */; };
+		21AC1B9423382C3C0009898A /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 21AC1B9223382C3C0009898A /* awsconfiguration.json */; };
+		21AC1B9523382C3C0009898A /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 21AC1B9323382C3C0009898A /* amplifyconfiguration.json */; };
+		CCC1A5C6B36023E3BFC7FBF0 /* Pods_AmplifyStorageSampleAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8ECE92AE17ED784CF70F93 /* Pods_AmplifyStorageSampleAppUITests.framework */; };
+		E43480485C68331B90EB2019 /* Pods_AmplifyStorageSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA27AF3C566495D98CA99A9C /* Pods_AmplifyStorageSampleApp.framework */; };
+		F573A1EEE5DFE7523C6D0BDE /* Pods_AmplifyStorageSampleAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B15C75051AAAE94FA484D764 /* Pods_AmplifyStorageSampleAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21AC1B762338213F0009898A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21AC1B592338213E0009898A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21AC1B602338213E0009898A;
+			remoteInfo = AmplifyStorageSampleApp;
+		};
+		21AC1B812338213F0009898A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21AC1B592338213E0009898A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21AC1B602338213E0009898A;
+			remoteInfo = AmplifyStorageSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A500A78C2603229EC400019 /* Pods-AmplifyStorageSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyStorageSampleApp.release.xcconfig"; path = "Target Support Files/Pods-AmplifyStorageSampleApp/Pods-AmplifyStorageSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		214421C523493C61009357F7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		214421C623493C61009357F7 /* ErrorMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorMapper.swift; sourceTree = "<group>"; };
+		214421C723493C61009357F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		214421C823493C61009357F7 /* ConfirmCodeSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCodeSource.swift; sourceTree = "<group>"; };
+		214421CE23493C74009357F7 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		214421D023493F91009357F7 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		214421D523495FF2009357F7 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		21442255234A5372009357F7 /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
+		21442256234A5372009357F7 /* SharePhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharePhotoController.swift; sourceTree = "<group>"; };
+		21442257234A5372009357F7 /* PhotoSelectorHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorHeader.swift; sourceTree = "<group>"; };
+		21442258234A5372009357F7 /* PhotoSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
+		2144225E234A61EA009357F7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		21442260234A6254009357F7 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		21442262234A62C9009357F7 /* AmplifyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyImageView.swift; sourceTree = "<group>"; };
+		21442265234A8A0F009357F7 /* ListUsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUsersViewController.swift; sourceTree = "<group>"; };
+		21442267234A8A85009357F7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		21442269234A8A8F009357F7 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		21AC1B612338213E0009898A /* AmplifyStorageSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmplifyStorageSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AC1B642338213E0009898A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21AC1B662338213E0009898A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		21AC1B692338213E0009898A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21AC1B6B2338213F0009898A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21AC1B6E2338213F0009898A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21AC1B702338213F0009898A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21AC1B752338213F0009898A /* AmplifyStorageSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmplifyStorageSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AC1B792338213F0009898A /* AmplifyStorageSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyStorageSampleAppTests.swift; sourceTree = "<group>"; };
+		21AC1B7B2338213F0009898A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21AC1B802338213F0009898A /* AmplifyStorageSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmplifyStorageSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21AC1B842338213F0009898A /* AmplifyStorageSampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyStorageSampleAppUITests.swift; sourceTree = "<group>"; };
+		21AC1B862338213F0009898A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21AC1B9223382C3C0009898A /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		21AC1B9323382C3C0009898A /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		233BE9A726FEF6ECAB655234 /* Pods-AmplifyStorageSampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyStorageSampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-AmplifyStorageSampleAppTests/Pods-AmplifyStorageSampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4B8ECE92AE17ED784CF70F93 /* Pods_AmplifyStorageSampleAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmplifyStorageSampleAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E76250207EC36E5646DB38 /* Pods-AmplifyStorageSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyStorageSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-AmplifyStorageSampleApp/Pods-AmplifyStorageSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		98C908549F151C9548F57818 /* Pods-AmplifyStorageSampleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyStorageSampleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-AmplifyStorageSampleAppUITests/Pods-AmplifyStorageSampleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A0D64F4CE62BCAEB3D19401E /* Pods-AmplifyStorageSampleAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyStorageSampleAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-AmplifyStorageSampleAppUITests/Pods-AmplifyStorageSampleAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B15C75051AAAE94FA484D764 /* Pods_AmplifyStorageSampleAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmplifyStorageSampleAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA27AF3C566495D98CA99A9C /* Pods_AmplifyStorageSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmplifyStorageSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F937B62BEFBA4B938F2CE899 /* Pods-AmplifyStorageSampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyStorageSampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-AmplifyStorageSampleAppTests/Pods-AmplifyStorageSampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21AC1B5E2338213E0009898A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43480485C68331B90EB2019 /* Pods_AmplifyStorageSampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21AC1B722338213F0009898A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F573A1EEE5DFE7523C6D0BDE /* Pods_AmplifyStorageSampleAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21AC1B7D2338213F0009898A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC1A5C6B36023E3BFC7FBF0 /* Pods_AmplifyStorageSampleAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00DA4F5F625110621D20CDC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70E76250207EC36E5646DB38 /* Pods-AmplifyStorageSampleApp.debug.xcconfig */,
+				0A500A78C2603229EC400019 /* Pods-AmplifyStorageSampleApp.release.xcconfig */,
+				F937B62BEFBA4B938F2CE899 /* Pods-AmplifyStorageSampleAppTests.debug.xcconfig */,
+				233BE9A726FEF6ECAB655234 /* Pods-AmplifyStorageSampleAppTests.release.xcconfig */,
+				A0D64F4CE62BCAEB3D19401E /* Pods-AmplifyStorageSampleAppUITests.debug.xcconfig */,
+				98C908549F151C9548F57818 /* Pods-AmplifyStorageSampleAppUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		07DBFB0E6B4154985A9A062A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA27AF3C566495D98CA99A9C /* Pods_AmplifyStorageSampleApp.framework */,
+				B15C75051AAAE94FA484D764 /* Pods_AmplifyStorageSampleAppTests.framework */,
+				4B8ECE92AE17ED784CF70F93 /* Pods_AmplifyStorageSampleAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		214421C423493C61009357F7 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				214421C523493C61009357F7 /* Constants.swift */,
+				214421C623493C61009357F7 /* ErrorMapper.swift */,
+				214421C723493C61009357F7 /* User.swift */,
+				214421C823493C61009357F7 /* ConfirmCodeSource.swift */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		214421CD23493C74009357F7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21442262234A62C9009357F7 /* AmplifyImageView.swift */,
+				214421CE23493C74009357F7 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		21442254234A5357009357F7 /* AddPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				21442255234A5372009357F7 /* PhotoSelectorCell.swift */,
+				21442257234A5372009357F7 /* PhotoSelectorHeader.swift */,
+				21442256234A5372009357F7 /* SharePhotoController.swift */,
+				21442258234A5372009357F7 /* PhotoSelectorController.swift */,
+			);
+			path = AddPhoto;
+			sourceTree = "<group>";
+		};
+		2144225D234A61D6009357F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2144225E234A61EA009357F7 /* Item.swift */,
+				21442260234A6254009357F7 /* ItemCell.swift */,
+				21442267234A8A85009357F7 /* Profile.swift */,
+				21442269234A8A8F009357F7 /* ProfileCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		21442264234A89EC009357F7 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				21AC1B662338213E0009898A /* ProfileViewController.swift */,
+				214421D523495FF2009357F7 /* ItemViewController.swift */,
+				21442265234A8A0F009357F7 /* ListUsersViewController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		21AC1B582338213E0009898A = {
+			isa = PBXGroup;
+			children = (
+				21AC1B9323382C3C0009898A /* amplifyconfiguration.json */,
+				21AC1B9223382C3C0009898A /* awsconfiguration.json */,
+				21AC1B632338213E0009898A /* AmplifyStorageSampleApp */,
+				21AC1B782338213F0009898A /* AmplifyStorageSampleAppTests */,
+				21AC1B832338213F0009898A /* AmplifyStorageSampleAppUITests */,
+				21AC1B622338213E0009898A /* Products */,
+				00DA4F5F625110621D20CDC1 /* Pods */,
+				07DBFB0E6B4154985A9A062A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21AC1B622338213E0009898A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21AC1B612338213E0009898A /* AmplifyStorageSampleApp.app */,
+				21AC1B752338213F0009898A /* AmplifyStorageSampleAppTests.xctest */,
+				21AC1B802338213F0009898A /* AmplifyStorageSampleAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21AC1B632338213E0009898A /* AmplifyStorageSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				21AC1B642338213E0009898A /* AppDelegate.swift */,
+				214421D023493F91009357F7 /* MainTabBarController.swift */,
+				21442264234A89EC009357F7 /* Tabs */,
+				21442254234A5357009357F7 /* AddPhoto */,
+				2144225D234A61D6009357F7 /* Models */,
+				214421C423493C61009357F7 /* Internal */,
+				214421CD23493C74009357F7 /* Utils */,
+				21AC1B682338213E0009898A /* Main.storyboard */,
+				21AC1B6B2338213F0009898A /* Assets.xcassets */,
+				21AC1B6D2338213F0009898A /* LaunchScreen.storyboard */,
+				21AC1B702338213F0009898A /* Info.plist */,
+			);
+			path = AmplifyStorageSampleApp;
+			sourceTree = "<group>";
+		};
+		21AC1B782338213F0009898A /* AmplifyStorageSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				21AC1B792338213F0009898A /* AmplifyStorageSampleAppTests.swift */,
+				21AC1B7B2338213F0009898A /* Info.plist */,
+			);
+			path = AmplifyStorageSampleAppTests;
+			sourceTree = "<group>";
+		};
+		21AC1B832338213F0009898A /* AmplifyStorageSampleAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21AC1B842338213F0009898A /* AmplifyStorageSampleAppUITests.swift */,
+				21AC1B862338213F0009898A /* Info.plist */,
+			);
+			path = AmplifyStorageSampleAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21AC1B602338213E0009898A /* AmplifyStorageSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21AC1B892338213F0009898A /* Build configuration list for PBXNativeTarget "AmplifyStorageSampleApp" */;
+			buildPhases = (
+				4455429EFEBEAA1A40884954 /* [CP] Check Pods Manifest.lock */,
+				21AC1B5D2338213E0009898A /* Sources */,
+				21AC1B5E2338213E0009898A /* Frameworks */,
+				21AC1B5F2338213E0009898A /* Resources */,
+				C3FE60562E2F13A4B5F4F148 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmplifyStorageSampleApp;
+			productName = AmplifyStorageSampleApp;
+			productReference = 21AC1B612338213E0009898A /* AmplifyStorageSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21AC1B742338213F0009898A /* AmplifyStorageSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21AC1B8C2338213F0009898A /* Build configuration list for PBXNativeTarget "AmplifyStorageSampleAppTests" */;
+			buildPhases = (
+				EA7DE451D17498EF7A623482 /* [CP] Check Pods Manifest.lock */,
+				21AC1B712338213F0009898A /* Sources */,
+				21AC1B722338213F0009898A /* Frameworks */,
+				21AC1B732338213F0009898A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21AC1B772338213F0009898A /* PBXTargetDependency */,
+			);
+			name = AmplifyStorageSampleAppTests;
+			productName = AmplifyStorageSampleAppTests;
+			productReference = 21AC1B752338213F0009898A /* AmplifyStorageSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21AC1B7F2338213F0009898A /* AmplifyStorageSampleAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21AC1B8F2338213F0009898A /* Build configuration list for PBXNativeTarget "AmplifyStorageSampleAppUITests" */;
+			buildPhases = (
+				040D7697660683B494FF8513 /* [CP] Check Pods Manifest.lock */,
+				21AC1B7C2338213F0009898A /* Sources */,
+				21AC1B7D2338213F0009898A /* Frameworks */,
+				21AC1B7E2338213F0009898A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21AC1B822338213F0009898A /* PBXTargetDependency */,
+			);
+			name = AmplifyStorageSampleAppUITests;
+			productName = AmplifyStorageSampleAppUITests;
+			productReference = 21AC1B802338213F0009898A /* AmplifyStorageSampleAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21AC1B592338213E0009898A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Amazon Web Services";
+				TargetAttributes = {
+					21AC1B602338213E0009898A = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					21AC1B742338213F0009898A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 21AC1B602338213E0009898A;
+					};
+					21AC1B7F2338213F0009898A = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 21AC1B602338213E0009898A;
+					};
+				};
+			};
+			buildConfigurationList = 21AC1B5C2338213E0009898A /* Build configuration list for PBXProject "AmplifyStorageSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21AC1B582338213E0009898A;
+			productRefGroup = 21AC1B622338213E0009898A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21AC1B602338213E0009898A /* AmplifyStorageSampleApp */,
+				21AC1B742338213F0009898A /* AmplifyStorageSampleAppTests */,
+				21AC1B7F2338213F0009898A /* AmplifyStorageSampleAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21AC1B5F2338213E0009898A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AC1B9423382C3C0009898A /* awsconfiguration.json in Resources */,
+				21AC1B6F2338213F0009898A /* LaunchScreen.storyboard in Resources */,
+				21AC1B9523382C3C0009898A /* amplifyconfiguration.json in Resources */,
+				21AC1B6C2338213F0009898A /* Assets.xcassets in Resources */,
+				21AC1B6A2338213E0009898A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21AC1B732338213F0009898A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21AC1B7E2338213F0009898A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		040D7697660683B494FF8513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmplifyStorageSampleAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4455429EFEBEAA1A40884954 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmplifyStorageSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3FE60562E2F13A4B5F4F148 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmplifyStorageSampleApp/Pods-AmplifyStorageSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmplifyStorageSampleApp/Pods-AmplifyStorageSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmplifyStorageSampleApp/Pods-AmplifyStorageSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7DE451D17498EF7A623482 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmplifyStorageSampleAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21AC1B5D2338213E0009898A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2144225F234A61EA009357F7 /* Item.swift in Sources */,
+				21442266234A8A0F009357F7 /* ListUsersViewController.swift in Sources */,
+				2144226A234A8A8F009357F7 /* ProfileCell.swift in Sources */,
+				21AC1B672338213E0009898A /* ProfileViewController.swift in Sources */,
+				214421D123493F91009357F7 /* MainTabBarController.swift in Sources */,
+				214421CA23493C61009357F7 /* ErrorMapper.swift in Sources */,
+				21AC1B652338213E0009898A /* AppDelegate.swift in Sources */,
+				21442263234A62C9009357F7 /* AmplifyImageView.swift in Sources */,
+				214421CB23493C61009357F7 /* User.swift in Sources */,
+				214421CC23493C61009357F7 /* ConfirmCodeSource.swift in Sources */,
+				214421C923493C61009357F7 /* Constants.swift in Sources */,
+				21442261234A6254009357F7 /* ItemCell.swift in Sources */,
+				2144225A234A5372009357F7 /* SharePhotoController.swift in Sources */,
+				2144225B234A5372009357F7 /* PhotoSelectorHeader.swift in Sources */,
+				214421CF23493C74009357F7 /* Extensions.swift in Sources */,
+				214421D623495FF2009357F7 /* ItemViewController.swift in Sources */,
+				21442259234A5372009357F7 /* PhotoSelectorCell.swift in Sources */,
+				21442268234A8A85009357F7 /* Profile.swift in Sources */,
+				2144225C234A5372009357F7 /* PhotoSelectorController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21AC1B712338213F0009898A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AC1B7A2338213F0009898A /* AmplifyStorageSampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21AC1B7C2338213F0009898A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AC1B852338213F0009898A /* AmplifyStorageSampleAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21AC1B772338213F0009898A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21AC1B602338213E0009898A /* AmplifyStorageSampleApp */;
+			targetProxy = 21AC1B762338213F0009898A /* PBXContainerItemProxy */;
+		};
+		21AC1B822338213F0009898A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21AC1B602338213E0009898A /* AmplifyStorageSampleApp */;
+			targetProxy = 21AC1B812338213F0009898A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21AC1B682338213E0009898A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21AC1B692338213E0009898A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		21AC1B6D2338213F0009898A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21AC1B6E2338213F0009898A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21AC1B872338213F0009898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21AC1B882338213F0009898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21AC1B8A2338213F0009898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E76250207EC36E5646DB38 /* Pods-AmplifyStorageSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
+				INFOPLIST_FILE = AmplifyStorageSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.AmplifyStorageSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21AC1B8B2338213F0009898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A500A78C2603229EC400019 /* Pods-AmplifyStorageSampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
+				INFOPLIST_FILE = AmplifyStorageSampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.AmplifyStorageSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21AC1B8D2338213F0009898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F937B62BEFBA4B938F2CE899 /* Pods-AmplifyStorageSampleAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
+				INFOPLIST_FILE = AmplifyStorageSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.AmplifyStorageSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmplifyStorageSampleApp.app/AmplifyStorageSampleApp";
+			};
+			name = Debug;
+		};
+		21AC1B8E2338213F0009898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233BE9A726FEF6ECAB655234 /* Pods-AmplifyStorageSampleAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
+				INFOPLIST_FILE = AmplifyStorageSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.AmplifyStorageSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmplifyStorageSampleApp.app/AmplifyStorageSampleApp";
+			};
+			name = Release;
+		};
+		21AC1B902338213F0009898A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D64F4CE62BCAEB3D19401E /* Pods-AmplifyStorageSampleAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
+				INFOPLIST_FILE = AmplifyStorageSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.AmplifyStorageSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmplifyStorageSampleApp;
+			};
+			name = Debug;
+		};
+		21AC1B912338213F0009898A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C908549F151C9548F57818 /* Pods-AmplifyStorageSampleAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
+				INFOPLIST_FILE = AmplifyStorageSampleAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazonaws.AmplifyStorageSampleAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AmplifyStorageSampleApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21AC1B5C2338213E0009898A /* Build configuration list for PBXProject "AmplifyStorageSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21AC1B872338213F0009898A /* Debug */,
+				21AC1B882338213F0009898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21AC1B892338213F0009898A /* Build configuration list for PBXNativeTarget "AmplifyStorageSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21AC1B8A2338213F0009898A /* Debug */,
+				21AC1B8B2338213F0009898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21AC1B8C2338213F0009898A /* Build configuration list for PBXNativeTarget "AmplifyStorageSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21AC1B8D2338213F0009898A /* Debug */,
+				21AC1B8E2338213F0009898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21AC1B8F2338213F0009898A /* Build configuration list for PBXNativeTarget "AmplifyStorageSampleAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21AC1B902338213F0009898A /* Debug */,
+				21AC1B912338213F0009898A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21AC1B592338213E0009898A /* Project object */;
+}

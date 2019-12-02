@@ -1,0 +1,30 @@
+# Pulling in .gitignore from amplify-js-samples-staging
+#node_modules
+.DS_Store
+#cypress/videos
+#cypress/screenshots
+.vscode
+#yarn-error.log
+
+# Pulling in .gitignore from aws-sdk-ios-samples
+# Xcode generated files #
+######################
+xcuserdata
+*.xccheckout
+*.xcscmblueprint
+
+# Patched code #
+######################
+*.bak
+
+# Built assets #
+######################
+build
+buildFramework
+AWS*.framework
+
+# Stuff that can't be committed #
+######################
+credentials.json
+Podfile.lock
+**/Pods

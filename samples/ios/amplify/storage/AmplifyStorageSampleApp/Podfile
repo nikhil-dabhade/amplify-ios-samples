@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+AWS_SDK_VERSION = "2.12.0"
+
+target 'AmplifyStorageSampleApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AmplifyStorageSampleApp
+  pod 'Amplify', :path => '~/aws-amplify/amplify-ios'
+  pod 'AWSPluginsCore', :path => '~/aws-amplify/amplify-ios'
+  pod 'AmplifyPlugins/AWSS3StoragePlugin', :path => '~/aws-amplify/amplify-ios'
+
+  pod "AWSMobileClient", "~> #{AWS_SDK_VERSION}"
+  pod 'AWSAuthUI', "~> #{AWS_SDK_VERSION}"
+  pod 'AWSUserPoolsSignIn', "~> #{AWS_SDK_VERSION}"
+  target 'AmplifyStorageSampleAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AmplifyStorageSampleAppUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
