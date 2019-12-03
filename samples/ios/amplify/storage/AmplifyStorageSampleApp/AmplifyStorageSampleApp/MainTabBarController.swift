@@ -31,10 +31,13 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
 
     func setupViewControllers() {
+        let publicViewController = ItemViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        publicViewController.accessLevel = .guest
         let publicNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "globe_unselected"),
                                                         selectedImage: #imageLiteral(resourceName: "globe_selected"),
                                                         title: "Guest",
-                                                        rootViewController: ItemViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+                                                        rootViewController: publicViewController)
+
 
         let protectedViewController = ListUsersViewController(collectionViewLayout: UICollectionViewFlowLayout())
         let protectedNavController = templateNavController(unselectedImage: #imageLiteral(resourceName: "lock_unselected"),
