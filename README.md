@@ -1,4 +1,4 @@
-## Amplify iOS Predictions
+## Amplify iOS Samples
 
 ### Setup
 **Clone repo**
