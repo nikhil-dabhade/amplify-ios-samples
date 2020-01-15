@@ -9,6 +9,7 @@
 import SwiftUI
 import Amplify
 import AVKit
+import Combine
 
 struct PredictionsConvertView: View {
 
@@ -16,6 +17,11 @@ struct PredictionsConvertView: View {
     @State private var translatedText: String = ""
     @State private var showingConvertActionSheet = false
     @State private var avPlayer: AVAudioPlayer!
+    @ObservedObject var audioRecorder: AudioRecorder
+    
+    init() {
+        audioRecorder = AudioRecorder()
+    }
 
     func translateText(text:String) {
         _ = Amplify.Predictions.convert(textToTranslate: text,
@@ -26,8 +32,9 @@ struct PredictionsConvertView: View {
                                             
                                             switch event {
                                             case .completed(let result):
-                                                print(result.text)
-                                                self.translatedText = result.text
+                                                let castedResult = result as! TranslateTextResult
+                                                print(castedResult.text)
+                                                self.translatedText = castedResult.text
                                             default:
                                                 print("")
                                                 
@@ -43,8 +50,9 @@ struct PredictionsConvertView: View {
             
             switch event {
             case .completed(let result):
-                print(result.audioData)
-                self.avPlayer = try? AVAudioPlayer(data: result.audioData)
+                let castedResult = result as! TextToSpeechResult
+                print(castedResult.audioData)
+                self.avPlayer = try? AVAudioPlayer(data: castedResult.audioData)
                 self.avPlayer?.play()
             default:
                 print("")
@@ -65,6 +73,28 @@ struct PredictionsConvertView: View {
     var body: some View {
         NavigationView {
             VStack {
+                if audioRecorder.recording == false {
+                    Button(action: {self.audioRecorder.startRecording()}) {
+                        Image(systemName: "circle.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 100, height: 100)
+                            .clipped()
+                            .foregroundColor(.red)
+                            .padding(.bottom, 40)
+                    }
+                } else {
+                    Button(action: {self.audioRecorder.stopRecording()}) {
+                        Image(systemName: "stop.fill")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 100, height: 100)
+                            .clipped()
+                            .foregroundColor(.red)
+                            .padding(.bottom, 40)
+                    }
+                }
+                
                 TextField("Enter text to convert", text: $userInput)
                     .padding(.all)
                 Button(action: {
@@ -82,7 +112,8 @@ struct PredictionsConvertView: View {
                 .padding(.vertical, 10.0)
                 .background(Color.blue)
                 .padding(.horizontal, 50)
-                Text(translatedText).padding(.all)
+                Text(translatedText).padding(.all).foregroundColor(.white)
+                Text(audioRecorder.transcription).padding(.all).foregroundColor(.white)
                 
             }.padding(.horizontal, 15)
                 .actionSheet(isPresented: $showingConvertActionSheet, content: {

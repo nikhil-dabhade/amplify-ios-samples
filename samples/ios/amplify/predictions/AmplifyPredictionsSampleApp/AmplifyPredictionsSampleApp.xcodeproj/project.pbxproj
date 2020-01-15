@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		339C53593A5EE3C858264257 /* Pods_AmplifyPredictionsSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D87349BFE375F7DA260F192 /* Pods_AmplifyPredictionsSampleApp.framework */; };
 		7A63DF6F9B12DCA4BDC2EF5F /* libPods-AmplifyPredictionsSampleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E24532DAA8BDE5A450F14E19 /* libPods-AmplifyPredictionsSampleAppTests.a */; };
+		950A26B023CF85F000D92B19 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 950A26AE23CF85F000D92B19 /* amplifyconfiguration.json */; };
+		950A26B123CF85F000D92B19 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 950A26AF23CF85F000D92B19 /* awsconfiguration.json */; };
+		950A26B323CF9B6100D92B19 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A26B223CF9B6100D92B19 /* AudioRecorder.swift */; };
+		950A26B523CF9C8D00D92B19 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950A26B423CF9C8D00D92B19 /* Date+Extension.swift */; };
 		950EB1F12388CF880002FF54 /* EntityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950EB1F02388CF880002FF54 /* EntityDetailView.swift */; };
 		950EB1F32388D2450002FF54 /* EntityRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950EB1F22388D2450002FF54 /* EntityRow.swift */; };
 		950EB1F52388D6880002FF54 /* IdentifiedEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950EB1F42388D6880002FF54 /* IdentifiedEntity.swift */; };
@@ -33,8 +37,6 @@
 		95DAA9E62379C36F0028544F /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAA9E52379C36F0028544F /* Label.swift */; };
 		B4B71E802368B8EB009B1863 /* PredictionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B71E7F2368B8EB009B1863 /* PredictionService.swift */; };
 		B4B71E832368BB4D009B1863 /* TranslatedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B71E822368BB4D009B1863 /* TranslatedText.swift */; };
-		B4B71E852368BE0D009B1863 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B4B71E842368BE0D009B1863 /* awsconfiguration.json */; };
-		B4B71E892368BF26009B1863 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = B4B71E882368BF26009B1863 /* amplifyconfiguration.json */; };
 		B4CEFE4623616985004B13CC /* PredictionsConvertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CEFE4523616984004B13CC /* PredictionsConvertView.swift */; };
 		B968E0C32FD1640334EB5CCE /* libPods-AmplifyPredictionsSampleAppUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5A1E89357A9FE5A4295FF6 /* libPods-AmplifyPredictionsSampleAppUITests.a */; };
 /* End PBXBuildFile section */
@@ -63,6 +65,10 @@
 		6A5A1E89357A9FE5A4295FF6 /* libPods-AmplifyPredictionsSampleAppUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AmplifyPredictionsSampleAppUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7682FC31812789EBB088A869 /* Pods-AmplifyPredictionsSampleApp-AmplifyPredictionsSampleAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyPredictionsSampleApp-AmplifyPredictionsSampleAppUITests.release.xcconfig"; path = "Target Support Files/Pods-AmplifyPredictionsSampleApp-AmplifyPredictionsSampleAppUITests/Pods-AmplifyPredictionsSampleApp-AmplifyPredictionsSampleAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8D87349BFE375F7DA260F192 /* Pods_AmplifyPredictionsSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmplifyPredictionsSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		950A26AE23CF85F000D92B19 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		950A26AF23CF85F000D92B19 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		950A26B223CF9B6100D92B19 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		950A26B423CF9C8D00D92B19 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		950EB1F02388CF880002FF54 /* EntityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityDetailView.swift; sourceTree = "<group>"; };
 		950EB1F22388D2450002FF54 /* EntityRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityRow.swift; sourceTree = "<group>"; };
 		950EB1F42388D6880002FF54 /* IdentifiedEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiedEntity.swift; sourceTree = "<group>"; };
@@ -94,8 +100,6 @@
 		B12832B8304A18A64570D684 /* Pods-AmplifyPredictionsSampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyPredictionsSampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-AmplifyPredictionsSampleAppTests/Pods-AmplifyPredictionsSampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B71E7F2368B8EB009B1863 /* PredictionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionService.swift; sourceTree = "<group>"; };
 		B4B71E822368BB4D009B1863 /* TranslatedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatedText.swift; sourceTree = "<group>"; };
-		B4B71E842368BE0D009B1863 /* awsconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		B4B71E882368BF26009B1863 /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		B4CEFE4523616984004B13CC /* PredictionsConvertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionsConvertView.swift; sourceTree = "<group>"; };
 		BFB8CAB6261041C0A110E2D5 /* Pods-AmplifyPredictionsSampleAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyPredictionsSampleAppTests.release.xcconfig"; path = "Target Support Files/Pods-AmplifyPredictionsSampleAppTests/Pods-AmplifyPredictionsSampleAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		C7278333EC5FC0DD98D4A2C1 /* Pods-AmplifyPredictionsSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplifyPredictionsSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-AmplifyPredictionsSampleApp/Pods-AmplifyPredictionsSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 		9596ED9A235F63780069587E = {
 			isa = PBXGroup;
 			children = (
+				950A26AE23CF85F000D92B19 /* amplifyconfiguration.json */,
+				950A26AF23CF85F000D92B19 /* awsconfiguration.json */,
 				9596EDA5235F63780069587E /* AmplifyPredictionsSampleApp */,
 				9596EDBC235F637B0069587E /* AmplifyPredictionsSampleAppTests */,
 				9596EDC7235F637B0069587E /* AmplifyPredictionsSampleAppUITests */,
@@ -175,8 +181,6 @@
 		9596EDA5235F63780069587E /* AmplifyPredictionsSampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				B4B71E882368BF26009B1863 /* amplifyconfiguration.json */,
-				B4B71E842368BE0D009B1863 /* awsconfiguration.json */,
 				95DAA9B323723C520028544F /* Extensions */,
 				95DAA99E2371F1C70028544F /* Utils */,
 				B4B71E812368BB38009B1863 /* Models */,
@@ -231,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				95DAA9B423723C6A0028544F /* UIImage+Extension.swift */,
+				950A26B423CF9C8D00D92B19 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 				95CF4513238874D200479D24 /* Line.swift */,
 				950EB1F42388D6880002FF54 /* IdentifiedEntity.swift */,
 				950EB1F92388DE1C0002FF54 /* SyntaxToken.swift */,
+				950A26B223CF9B6100D92B19 /* AudioRecorder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -401,11 +407,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B71E852368BE0D009B1863 /* awsconfiguration.json in Resources */,
+				950A26B123CF85F000D92B19 /* awsconfiguration.json in Resources */,
 				9596EDB3235F637B0069587E /* LaunchScreen.storyboard in Resources */,
-				B4B71E892368BF26009B1863 /* amplifyconfiguration.json in Resources */,
 				9596EDB0235F637B0069587E /* Preview Assets.xcassets in Resources */,
 				9596EDAD235F637B0069587E /* Assets.xcassets in Resources */,
+				950A26B023CF85F000D92B19 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9596EDA7235F63780069587E /* AppDelegate.swift in Sources */,
+				950A26B523CF9C8D00D92B19 /* Date+Extension.swift in Sources */,
 				95DAA99D2371DC000028544F /* PredictionsIdentifyView.swift in Sources */,
 				B4B71E832368BB4D009B1863 /* TranslatedText.swift in Sources */,
 				95DAA9B523723C6A0028544F /* UIImage+Extension.swift in Sources */,
@@ -531,6 +538,7 @@
 				95DAA9E22379BF270028544F /* LabelRow.swift in Sources */,
 				B4CEFE4623616985004B13CC /* PredictionsConvertView.swift in Sources */,
 				95DAA9A02371F1D50028544F /* ImagePicker.swift in Sources */,
+				950A26B323CF9B6100D92B19 /* AudioRecorder.swift in Sources */,
 				950EB1F12388CF880002FF54 /* EntityDetailView.swift in Sources */,
 				950EB1F52388D6880002FF54 /* IdentifiedEntity.swift in Sources */,
 				95CF451023885B7B00479D24 /* PredictionsInterpretView.swift in Sources */,
@@ -703,7 +711,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AmplifyPredictionsSampleApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 5ZQT6X6FGJ;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AmplifyPredictionsSampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
@@ -725,7 +733,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AmplifyPredictionsSampleApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 5ZQT6X6FGJ;
+				DEVELOPMENT_TEAM = W3DRXD72QU;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AmplifyPredictionsSampleApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;

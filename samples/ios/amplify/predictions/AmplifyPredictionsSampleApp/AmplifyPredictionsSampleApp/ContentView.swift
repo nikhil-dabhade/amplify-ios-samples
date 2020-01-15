@@ -33,14 +33,14 @@ struct ContentView: View {
                 }
                 .tag(1)
             PredictionsConvertView()
-            .font(.title)
-            .tabItem {
-                VStack {
-                    Image("second")
-                    Text("Convert")
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image("second")
+                        Text("Convert")
+                    }
                 }
-            }
-            .tag(2)
+                .tag(2)
         }
     }
 }

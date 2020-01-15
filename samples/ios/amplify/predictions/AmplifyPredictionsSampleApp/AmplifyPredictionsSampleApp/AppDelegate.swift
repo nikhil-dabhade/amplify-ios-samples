@@ -8,9 +8,9 @@
 
 import UIKit
 import Amplify
-import AmplifyPlugins
 import AWSMobileClient
 import CoreMLPredictionsPlugin
+import AWSPredictionsPlugin
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
