@@ -73,6 +73,7 @@ struct PredictionsConvertView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("To record audio to transcribe click the red button below:")
                 if audioRecorder.recording == false {
                     Button(action: {self.audioRecorder.startRecording()}) {
                         Image(systemName: "circle.fill")
