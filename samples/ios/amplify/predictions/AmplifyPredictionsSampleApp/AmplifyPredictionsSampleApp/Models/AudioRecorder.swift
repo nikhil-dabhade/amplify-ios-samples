@@ -79,7 +79,9 @@ class AudioRecorder: ObservableObject {
                    let castedResult = result as! SpeechToTextResult
                    print(castedResult.transcriptions)
                    if castedResult.transcriptions.count > 0 {
+                    DispatchQueue.main.async {
                    self.transcription = castedResult.transcriptions[0]
+                    }
                 }
                default:
                    print("")
