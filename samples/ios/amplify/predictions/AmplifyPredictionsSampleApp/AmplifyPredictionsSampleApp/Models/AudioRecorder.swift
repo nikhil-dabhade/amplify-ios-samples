@@ -70,8 +70,7 @@ class AudioRecorder: ObservableObject {
     }
     
     func transcribe() {
-           let options = PredictionsSpeechToTextRequest.Options()
-        
+        let options = PredictionsSpeechToTextRequest.Options(defaultNetworkPolicy: .auto, voiceType: nil, pluginOptions: nil)
            _ = Amplify.Predictions.convert(speechToText: audioFilename, options: options, listener: { (event) in
                
                switch event {
