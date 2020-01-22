@@ -42,7 +42,7 @@ class AudioRecorder: ObservableObject {
         }
         
         let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        audioFilename = documentPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).wav")
+        audioFilename = documentPath.appendingPathComponent("\(UUID()).wav")
         //store filename on class to send to transcribe
         
         let settings = [
@@ -70,17 +70,18 @@ class AudioRecorder: ObservableObject {
     }
     
     func transcribe() {
-        let options = PredictionsSpeechToTextRequest.Options(defaultNetworkPolicy: .auto, voiceType: nil, pluginOptions: nil)
+        let options = PredictionsSpeechToTextRequest.Options(defaultNetworkPolicy: .auto, pluginOptions: nil)
+//        let group = DispatchGroup()
+//        group.enter()
            _ = Amplify.Predictions.convert(speechToText: audioFilename, options: options, listener: { (event) in
                
                switch event {
                case .completed(let result):
-                   let castedResult = result as! SpeechToTextResult
-                   print(castedResult.transcriptions)
-                   if castedResult.transcriptions.count > 0 {
-                    DispatchQueue.main.async {
-                   self.transcription = castedResult.transcriptions[0]
-                    }
+               
+                print(result.transcription)
+               // group.leave()
+                DispatchQueue.main.async {
+                   self.transcription = result.transcription
                 }
                default:
                    print("")
@@ -88,5 +89,30 @@ class AudioRecorder: ObservableObject {
                    
                }
            })
+       // sleep(3)
+       // group.enter()
+        let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let url2 = documentPath.appendingPathComponent("D0C86DC2-529D-4660-9D4C-A6C6C20AA8AF.wav")
+       
+//           _ = Amplify.Predictions.convert(speechToText: url2, options: options, listener: { (event) in
+//
+//               switch event {
+//               case .completed(let result):
+//
+//                print(result.transcription)
+//                // group.leave()
+//                DispatchQueue.main.async {
+//                   self.transcription = result.transcription
+//                }
+//               default:
+//                   print("")
+//
+//
+//               }
+//           })
+        
+//        group.notify(queue: .main) {
+//            print("both done")
+//        }
     }
 }

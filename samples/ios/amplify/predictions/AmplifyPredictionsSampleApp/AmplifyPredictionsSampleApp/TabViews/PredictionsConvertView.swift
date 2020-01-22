@@ -32,9 +32,8 @@ struct PredictionsConvertView: View {
                                             
                                             switch event {
                                             case .completed(let result):
-                                                let castedResult = result as! TranslateTextResult
-                                                print(castedResult.text)
-                                                self.translatedText = castedResult.text
+                                                print(result.text)
+                                                self.translatedText = result.text
                                             default:
                                                 print("")
                                                 
@@ -50,9 +49,8 @@ struct PredictionsConvertView: View {
             
             switch event {
             case .completed(let result):
-                let castedResult = result as! TextToSpeechResult
-                print(castedResult.audioData)
-                self.avPlayer = try? AVAudioPlayer(data: castedResult.audioData)
+                print(result.audioData)
+                self.avPlayer = try? AVAudioPlayer(data: result.audioData)
                 self.avPlayer?.play()
             default:
                 print("")
